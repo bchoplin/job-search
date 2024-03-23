@@ -1,24 +1,51 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Chart as ChartJS } from 'chart.js';
+import Header from './components/Header';
+import Section from './components/section/Section';
+import SectionIntro from './components/section/SectionIntro';
+import SectionData from './components/section/SectionData';
+import SectionOverview from './components/section/SectionOverview';
+import Totals from './components/data/Totals';
+import ApplicationResults from './components/data/ApplicationResults';
+import InterviewTypes from './components/data/InterviewTypes';
+import ProfessionalDevelopment from './components/data/ProfessionalDevelopment';
+
+ChartJS.defaults.font.family = '"Quicksand", sans-serif';
+ChartJS.defaults.font.size = 14;
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+      <Header />
+      <main>
+        <SectionIntro />
+        <SectionData />
+        <SectionOverview />
+        <Section
+          sectionType="gradient-bg"
+          id="totals"
+          detectWidth={true}
         >
-          Learn React
-        </a>
-      </header>
+          <Totals />
+        </Section>
+        <Section
+          sectionType="grid"
+          id="apps-interviews"
+        >
+          <ApplicationResults />
+          <InterviewTypes />
+        </Section>
+        <Section
+          sectionType="gradient-bg"
+          id="pd"
+        >
+          <ProfessionalDevelopment />
+        </Section>
+      </main>
+      <footer>
+        <div className="container">
+          &copy; {new Date().getFullYear()} <a href="https://brittanychopl.in/">Brittany Choplin</a>
+        </div>
+      </footer>
     </div>
   );
 }

@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# Job Search
+
+This is a simple React app to document some of the data I collected while looking for a new role, from December 2023 to March 2024. It uses [Chart.js](https://www.chartjs.org/) for the data visualization.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
