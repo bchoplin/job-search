@@ -229,6 +229,7 @@ h2 {
 }
 
 .section--has-overflow .section__inner {
+  padding: 0;
   position: relative;
 }
 
@@ -248,6 +249,10 @@ h2 {
 .section--has-overflow .shadow--right {
   right: 0;
   background-image: radial-gradient(farthest-side at 100% 50%, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.section--has-overflow .section__inner .job-search-chart {
+  padding: 1.25rem;
 }
 
 .section--gray-bg {
@@ -489,12 +494,14 @@ table tbody th {
   text-align: left;
 }
 
-#totals .section__text {
+#totals .section__text,
+#pd .section__text {
   overflow-x: scroll;
   overflow-y: hidden;
 }
 
-.job-search-chart--totals {
+.job-search-chart--totals,
+.job-search-chart--professional-development {
   min-width: 48rem;
 }
 

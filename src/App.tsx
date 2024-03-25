@@ -37,8 +37,9 @@ function App() {
         <Section
           sectionType="gradient-bg"
           id="pd"
+          detectWidth={true}
         >
-          <ProfessionalDevelopment />
+          <ProfessionalDevelopment/>
         </Section>
       </main>
       <footer>
