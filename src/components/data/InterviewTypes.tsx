@@ -41,6 +41,13 @@ const interviewTypesData = {
         'rgba(0, 193, 228, 0.75)',
         'rgba(88, 207, 189, 0.75)',
       ],
+      borderColor: [
+        'rgb(218, 106, 153)',
+        'rgb(178, 137, 216)',
+        'rgb(96, 170, 243)',
+        'rgb(0, 193, 228)',
+        'rgb(88, 207, 189)',
+      ],
       borderWidth: 1,
     },
   ],
