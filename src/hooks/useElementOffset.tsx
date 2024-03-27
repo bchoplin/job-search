@@ -1,12 +1,12 @@
 import { useState, useEffect } from 'react';
 
-const useElementOffset = (ref: React.RefObject<HTMLDivElement>): [
+export default function useElementOffset (ref: React.RefObject<HTMLDivElement>): [
   number,
   {
     canScrollLeft: boolean,
     canScrollRight: boolean
   }
-] => {
+] {
   const [width, setWidth] = useState(0);
   const [scrollStatus, setScrollStatus] = useState({
     canScrollLeft: false,
@@ -75,5 +75,3 @@ const useElementOffset = (ref: React.RefObject<HTMLDivElement>): [
 
   return [width, scrollStatus];
 };
-
-export default useElementOffset;

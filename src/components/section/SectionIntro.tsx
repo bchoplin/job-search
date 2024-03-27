@@ -37,9 +37,7 @@ export default function SectionIntro() {
         :
           <span>Read More</span>
         }
-        <span className="sr-only">
-            about my job search journey
-        </span>
+        <span className="sr-only">about my job search journey</span>
       </button>
     </Section>
   );
