@@ -34,6 +34,7 @@ export default function SectionOverview() {
           { th: 'Ghosted (no response for > 30 days)', td: '55' },
           { th: 'Active (no response for < 30 days)', td: '17' },
           { th: 'Landed an Interview', td: '24' },
+          { th: 'Application-to-Interview Ratio', td: '16%' },
         ]}
       />
       <AccordionTable
@@ -42,7 +43,7 @@ export default function SectionOverview() {
         data={[
           { th: 'Total', td: '39' },
           { th: 'Number of Companies', td: '24' },
-          { th: 'Initial / Recruiter', td: '19' },
+          { th: 'Recruiter', td: '19' },
           { th: 'Behavioral', td: '9' },
           { th: 'Technical', td: '9' },
           { th: 'Panel', td: '2' },
@@ -56,10 +57,10 @@ export default function SectionOverview() {
         title="Interview Results"
         accordionId="interview-results"
         data={[
-          { th: 'Rejected', td: '15' },
+          { th: 'Rejected', td: '14' },
           { th: 'Withdrew', td: '8' },
           { th: 'Runner-Up', td: '1'},
-          { th: 'Offers', td: '1' },
+          { th: 'Offer', td: '1' },
         ]}
       />
       <AccordionTable

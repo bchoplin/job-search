@@ -29,7 +29,7 @@ const interviewTypesOptions = {
   };
 
 const interviewTypesData = {
-  labels: ['Initial', 'Behavioral', 'Panel', 'Technical'],
+  labels: ['Recruiter', 'Behavioral', 'Panel', 'Technical'],
   datasets: [
     {
       label: '# of Interviews',
