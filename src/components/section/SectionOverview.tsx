@@ -82,7 +82,7 @@ export default function SectionOverview() {
         title="Networking and Communication"
         accordionId="networking-communication"
         data={[
-          { th: 'Referrals', td: '5' },
+          { th: 'Referrals', td: '6' },
           { th: 'Emails Sent', td: '92' },
           { th: 'Emails Received', td: '606' },
           { th: 'LinkedIn Connections', td: '100' },
