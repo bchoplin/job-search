@@ -44,7 +44,7 @@ function App() {
       </main>
       <footer>
         <div className="container">
-          &copy; {new Date().getFullYear()} <a href="https://brittanychopl.in/">Brittany Choplin</a>
+          <p>&copy; {new Date().getFullYear()} <a href="https://brittanychopl.in/">Brittany Choplin</a></p>
         </div>
       </footer>
     </div>

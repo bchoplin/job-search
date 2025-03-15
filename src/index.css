@@ -5,6 +5,7 @@
   --global--color--white: #ffffff;
   --global--color--pink: #da6a99;
   --global--color--purple: #b289d8;
+  --global--color--dark-purple: #823fc0;
   --global--color--blue: #60aaf3;
   --global--color--sea-blue: #00c1e4;
   --global--color--green: #58cfbd;
@@ -104,8 +105,47 @@ a {
 }
 
 a:hover,
-a:focus {
+a:focus-visible {
   color: #9F285A;
+}
+
+p a {
+  color: var(--global--color--dark-purple);
+  display: inline-block;
+  font-weight: 500;
+  padding-bottom: 0.125rem;
+  position: relative;
+  text-decoration: none;
+}
+
+p a:hover,
+p a:focus-visible {
+  color: var(--global--color--dark-purple);
+}
+
+p a::before,
+p a::after {
+  bottom: 0;
+  content: '';
+  height: 2px;
+  left: 0;
+  position: absolute;
+}
+
+p a::before {
+  background-color: var(--global--color--dark-purple);
+  right: 0;
+}
+
+p a::after {
+  background-image: var(--global--gradient-right);
+  transition: width 0.3s;
+  width: 0;
+}
+
+p a:hover::after,
+p a:focus-visible::after {
+  width: 100%;
 }
 
 .sr-only {
@@ -131,6 +171,11 @@ a:focus {
   @media (min-width: 48rem) {
     font-size: 3rem;
   }
+}
+
+.h1-like a {
+  color: var(--global--color--dark-gray);
+  text-decoration: none;
 }
 
 .h2-like {
@@ -506,7 +551,8 @@ table tbody th {
 }
 
 footer {
-  font-size: 0.9rem;
+  font-size: 1rem;
+  font-weight: 500;
   padding: 0 0 2rem;
   text-align: center;
 }
